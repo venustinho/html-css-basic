@@ -150,3 +150,46 @@ body
 {
     color: green
 
+<!--code de grid-->
+
+
+
+  .grid
+{
+    display: grid;
+    grid-template-columns:4, 1fr;
+    grid-auto-rows: 200px;
+    grid-gap: 20px
+    direction: rtl;
+}
+.grid div:nth-child()
+{
+    grid-column: 1/-1;
+}
+.grid div:nth-child()
+{
+    grid-column: 1;
+    grid-row: 2;
+}
+.grid div:nth-child() 
+{
+    grid-column: 2/span 2;
+    grid-row: 2;
+    position: relative;
+}
+.grid div:nth-child()
+{
+    grid-column: 4;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.abspos
+{
+    background-color: rgb(19, 15, 110);
+    padding:0,2em;
+    border-radius: 3px;
+    position: absolute;
+    top:10px;
+    left:30px;
+}
